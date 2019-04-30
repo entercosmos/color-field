@@ -1,7 +1,7 @@
 {
   "name": "color-field",
-  "version": "1.0.0",
-  "description": "color-field React component",
+  "version": "0.1.0",
+  "description": "Used for choosing a color",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -11,6 +11,7 @@
     "umd"
   ],
   "scripts": {
+    "deploy": "cd demo/dist && surge --project ./ --domain cmds-color-field.surge.sh",
     "build": "nwb build-react-component",
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build",
@@ -24,6 +25,10 @@
     "react": "16.x"
   },
   "devDependencies": {
+    "@cmds/colors": "^0.3.0",
+    "@cmds/demo-utils": "^0.3.0",
+    "emotion": "^10.0.9",
+    "lodash": "^4.17.11",
     "nwb": "0.23.x",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
