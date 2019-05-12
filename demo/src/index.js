@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
 import {injectGlobal} from 'emotion'
-import {Canvas, Heading, Paragraph, Box} from '@cmds/demo-utils'
-import colors from '@cmds/colors'
+import {Canvas, Heading, Paragraph, Box} from '@pndr/demo-utils'
+import colors from '@pndr/colors'
 import map from 'lodash/map'
 
 injectGlobal`
